@@ -1,1 +1,100 @@
+body {
+    padding-left: 11em;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: rgb(160, 18, 160);
+    background-color: #fcfdc7 }
+header {
+        display: block;
+    }
 
+.header {
+        background-color: #829985;
+        padding: 20px;
+        border-bottom: 1px solid hsl(0, 91%, 35%);
+    }
+
+  
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+
+.section {
+    width: calc(50% - 20px);
+    padding: 12px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c41f1f;
+}
+.container main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background-color: #829985;
+    padding: 20px;
+    border-bottom: 1px solid hsl(0, 91%, 35%);
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.nav-list {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+}
+.nav-list li {display: inline-block;}
+.nav-list li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.nav-list li:last-child:after {content: none;}
+.nav-list a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.nav-list a, .nav-list a:visited {color: #9d999d;}
+.nav-list a.current, .nav-list a:hover{color: #feb386;}
+.nav-list a:before,
+.nav-list a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.nav-list a:hover:before, .nav-list .current:before {left: 0;}
+.nav-list a:hover:after, .nav-list .current:after {right: 0;}   
+@media (max-width: 550px) {
+.nav-list {padding-top: 0;}
+.nav-list li {display: block;}
+.nav-list li:after {content: none;}
+.nav-list a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
