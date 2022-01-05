@@ -4,7 +4,8 @@ body {
           Times, serif;
     color: rgb(160, 18, 160);
     background-color: #fcfdc7 }
-header {
+
+  header {
         display: block;
     }
 
@@ -14,8 +15,12 @@ header {
         border-bottom: 1px solid hsl(0, 91%, 35%);
     }
 
-  
-  h1 {
+ .contacts {
+        font-size: 16px;
+        line-height: 35px;
+    }
+
+  h1, h2 {
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif }
 
@@ -25,10 +30,11 @@ header {
     padding-bottom: 30px;
     border-bottom: 1px solid #c41f1f;
 }
-.container main {
+.container-main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 .container {
     max-width: 1440px;
@@ -37,13 +43,32 @@ header {
     box-sizing: border-box;
 }
 
-
-.footer {
-    background-color: #829985;
-    padding: 20px;
-    border-bottom: 1px solid hsl(0, 91%, 35%);
+.pre {
+  font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif;
+  font-size: 16px;
 }
 
+.footer {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: #829985; 
+    border-bottom: 1px solid hsl(0, 91%, 35%);
+  
+  }
+
+.footer-github {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .nav-list {

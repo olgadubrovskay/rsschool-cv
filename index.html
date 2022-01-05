@@ -10,12 +10,15 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header">
+        <div class="container-header">
           <nav class="nav">
             <ul class="nav-list">          
               <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
               <li class="nav-item"><a href="#summary" class="nav-link">Summary</Summary></a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Skills</Skills></a></li>
               <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+              <li class="nav-item"><a href="#courses" class="nav-link">Courses</Courses></a></li>
+              <li class="nav-item"><a href="#projects" class="nav-link">Projects</Projects></a></li>
               <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
               <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
             </ul>
@@ -23,64 +26,105 @@
         </div>
       </header>
       <main class="main">
-        <div class="container main">
+        <section class="section" id="contacts">
+        <div class="container-main">
             <img class="foto" src="./foto.jpg" alt="foto">
-            <div class="profile-title">
+              <div class="profile-title">
               <h1 class="main-title">Olga Dubrovskaya</h1>
-              <h3 class="subtitle">Stage0</h3>
+              <h2 class="section-title">Contacts</h2>
+              <ul class="section-list">
+                <li class="contacts">
+                  Vitebsk, Belarus
+                </li>
+                <li class="contacts">
+                  Phone: +37525-932-40-81
+                </li>
+                <li class="contacts">
+                  Email: <a href="cherry20@tut.by" title="email">cherry20@tut.by</a>
+                </li>
+                <li class="contacts">
+                  Github: <a href="https://github.com/olgadubrovskay" title="github">olgadubrovskay</a>
+                </li>
+                <li class="contacts">
+                  Discord: <a href="https://discord.gg/" title="discord">olgadubrovskay#4425</a>
+                </li>
+              </ul>
             </div>        
-          
-          <section class="section" id="contacts">
-            <h2 class="section-title">Contacts</h2>
-            <ul class="section-list">
-              <li class="contacts">
-                Vitebsk, Belarus
-              </li>
-              <li class="contacts">
-                Email: <a href="cherry20@tut.by" title="email">cherry20@tut.by</a>
-              </li>
-              <li class="contacts">
-                Github: <a href="https://github.com/olgadubrovskay" title="github">olgadubrovskay</a>
-              </li>
-              <li class="contacts">
-                Discord: <a href="https://discord.gg/" title="github">olgadubrovskay#4425</a>
-              </li>
-            </ul>
-          </section>
+        </section>  
+        
+              
           <section class="section" id="summary">
             <h2 class="section-title">Summary</h2>
-            <p>
-                graduate student, I work at the Department of Information Technology, I want to master the ability to write websites
-            </p>
-         
+            <p title="About me">Graduate student. I work at the Department of Information Technology Vitebsk State Order of Peoples' Friendship Medical Universit. I want to master the ability to write websites</p>
+          </section>  
+                                
+            <section class="section" id="skills">
+              <h2 class="section-title">Skills</h2>
+              <ol class="section-list">
+                <li class="contacts">
+                  HTML, CSS
+                </li>
+                <li class="contacts">
+                  GIT, GitHub
+                </li>
+                <li class="contacts">
+                  AdobePhotoshop
+                </li>
+              </ol>
+            </section>
+          
           <section class="section" id="code">
             <h2 class="section-title">Code</h2>
-    <pre class="pre"><code>
-        double F (double x)
-        {
+            <pre class="pre"><code>
+            double F (double x)
+          {
             double f;
             f = sin(x) + cos(x);
             return f;
-        }
-    }</code></pre>
+          }
+          </code></pre>
           </section>
          
-          <section class="section section-education" id="education">
-            <h2 class="section-title">Education</h2>
-            <p>Vitebsk State Technological University</p>
+          <section class="section" id="courses">
+            <h2 class="section-title">Courses</h2>
+            <p> Code Basic for beginner </p>
+          
           </section>
+            <section class="section" id="projects">
+              <h2 class="section-title">Projects</h2>
+              <p>
+                Link: <a href="https://github.com/olgadubrovskay/rsschool-cv/tree/rsschool-cv-html" title="github">https://github.com/olgadubrovskay/rsschool-cv/tree/rsschool-cv-html</a> 
+              </p>
+            </section>
+         
+            <section class="section section-education" id="education">
+            <h2 class="section-title">Education</h2>
+            <ol class="section-list">
+              <li class="contacts">
+                <p>Vitebsk State Polytechnic College</p> 
+              </li>
+              <li class="contacts">
+                <p>Vitebsk State Technological University</p>
+              </li>              
+            </ol>
+          </section>
+                    
           <section class="section section-english" id="english">
             <h2 class="section-title">English</h2>
-            <p>A1 — Beginner</p>
+            <p>A1 Beginner</p>
           </section>
         </div>
       </main>
+
       <footer class="footer">
-        <div id="footer">
-            <p class="nav-list"><strong>Телефон:<br> 932-40-80</strong> </p>
-            <p class="nav-list"><strong>E-mail<br>cherry20@tut.by</strong></p>
-      
-          </div>
+        <a class="footer-github" href="https://github.com/olgadubrovskay/">
+          <img class="github-icon" src="./github-icon.svg" alt="Github Icon" width="26" height="26">
+          <p>My GitHub</p>
+        </a>
+        <p>© 2022</p>
+        <a href="https://rs.school/js/">
+          <img src="./rs_school_js.svg" alt="Rsschool Icon" width="73" height="26">
+        </a>
       </footer>
       
     </body>
